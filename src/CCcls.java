@@ -6,5 +6,5 @@ class CCinner {
 }
 
 class Test2 {
-    
+
 }

@@ -9,7 +9,6 @@ public class InnerJoinTestDrive {
     public static void main(String[] args) {
         // Проверяем аргументы
         if (args[0] == null || args[1] == null || args[2] == null || args.length != 3) {
-            System.out.println("Введите корректные пути имен файлов");
         } else {
             String tableAfileName = args[0];
             String tableBfileName = args[1];
