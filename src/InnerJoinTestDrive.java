@@ -14,6 +14,7 @@ public class InnerJoinTestDrive {
             String tableAfileName = args[0];
             String tableBfileName = args[1];
             String joinTableFileName = args[2];
+            int yy;
 
             try {
                 ArrayList<Record> tableA = readFile(tableAfileName);
