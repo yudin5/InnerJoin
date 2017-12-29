@@ -59,7 +59,7 @@ public class InnerJoinTestDrive {
      * @param tableB Таблица В
      * @return Возвращает результат Inner Join в виде списка
      */
-    public static ArrayList<String> arrayListInnerJoin(ArrayList<Record> tableA, ArrayList<Record> tableB) {
+    private static ArrayList<String> arrayListInnerJoin(ArrayList<Record> tableA, ArrayList<Record> tableB) {
         ArrayList<String> result = new ArrayList<>();
         for (Record recordFromB : tableB) {
             for (Record recordFromA : tableA) {
@@ -78,7 +78,7 @@ public class InnerJoinTestDrive {
      * @param tableB Таблица В
      * @return Возвращает результат Inner Join в виде списка
      */
-    public static ArrayList<String> linkedListInnerJoin(LinkedList<Record> tableA, LinkedList<Record> tableB) {
+    private static ArrayList<String> linkedListInnerJoin(LinkedList<Record> tableA, LinkedList<Record> tableB) {
 
         ArrayList<String> result = new ArrayList<>();
         ListIterator<Record> tableAiter = tableA.listIterator();
@@ -134,7 +134,7 @@ public class InnerJoinTestDrive {
      * @param hashTableB Таблица В
      * @return Возвращает результат Inner Join в виде списка
      */
-    public static ArrayList<String> hashMapInnerJoin(HashMap<Integer, ArrayList<String>> hashTableA, HashMap<Integer, ArrayList<String>> hashTableB) {
+    private static ArrayList<String> hashMapInnerJoin(HashMap<Integer, ArrayList<String>> hashTableA, HashMap<Integer, ArrayList<String>> hashTableB) {
         ArrayList<String> result = new ArrayList<>();
         for (int id : hashTableA.keySet()) {
             if (hashTableB.containsKey(id)) { // Ключи совпадают, записываем списки значений
